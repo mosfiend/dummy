@@ -1,6 +1,9 @@
-function Contact() {
+import React from "react"
+
+function Contact({header}) {
 
     return (<>
+    <h4>{header}</h4>
 <form id="contact" className="contact">
 <label>Name</label>
 <input id="name-field" className="input" type="text" name="name"/>

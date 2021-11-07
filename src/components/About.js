@@ -1,8 +1,9 @@
+import React from "react"
+
 function About() {
   return (
 
-  <div className="main-container">
-    <div>
+    <>
     
       <div>
         <h4>More about me</h4>
@@ -26,23 +27,21 @@ function About() {
                 <li>React</li>
               </ul>
             </li>
-            <li>Node.js</li>
+            <li>Node.js & Express</li>
             <li>
               HTML/CSS
               <ul>
-                <li>Sass</li>
-                <li>Scss</li>
+                <li>Sass/Scss</li>
               </ul>
             </li>
           </ul>
           <ul>
             <li>Mongoose &amp; MongoDB</li>
-            <li>Express</li>
+            <li></li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </>
 
   );
 }
