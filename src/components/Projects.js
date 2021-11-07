@@ -6,9 +6,7 @@ const Projects= () => {
 const [slide,setSlide] = useState(0)
 
 const {width} = useWindowSize()
-let objData = Object.assign({},data[slide]),
- objDataX = Object.assign({},data[slide-1]),
- objDataY = Object.assign({},data[slide+1])
+let objData = Object.assign({},data[slide])
 
 const prevProject = () => {
 setSlide(slide===0?data.length-1:(slide-1)%data.length)

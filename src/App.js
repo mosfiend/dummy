@@ -1,12 +1,11 @@
 import './style.css'
 import React, { useState} from "react"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import useWindowSize from "./outils/useWindowSize"
+// import useWindowSize from "./outils/useWindowSize"
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Nav from "./components/Nav"
-import Footer from './components/Footer';
 import {FaTwitter} from "react-icons/fa"
 import {FaLinkedin} from "react-icons/fa"
 import {FaGithub} from "react-icons/fa"
@@ -19,7 +18,7 @@ let arr =["","","",""]
 display ==="about"?arr[0]="active":display==="projects"?arr[1]="active":display==="contact"?arr[2]="active":arr[3]="active"
 setPack(arr)
 }
-const {width}= useWindowSize()
+// const {width}= useWindowSize()
 return (  <Router>
   <Nav pack={pack} toggle={toggle}/>
   <section className="s1">
